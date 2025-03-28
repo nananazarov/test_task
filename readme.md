@@ -31,7 +31,7 @@ pip install -r requirements.txt
 4. Запуск генератора тестовых данных:
 
 ```bash
-python -m src.scripts.dummy_data_generator
+python -m helpers.dummy_data_generator
 ```
 
 ## Задачи
@@ -45,6 +45,6 @@ python -m src.scripts.dummy_data_generator
    - Для репитных клиентов, чей номер телефона оканчивается цифрой 2 или 4 применить стратегию RepeatClientPilotStrategy
 
 3. **Тестирование**
-   - Сгенерировать тестовые данные с помощью dummy_data_generator
-   - Проверить корректность идентификации пилотных номеров телефонов
-   - Убедиться, что система работает согласно требованиям
+   - Сгенерировать тестовые данные с помощью helpers.dummy_data_generator
+   - Запустить расчет с помощью runner.py
+   - Убедиться, что стратегия работает, можно использовать helpers.test_result_look_up
