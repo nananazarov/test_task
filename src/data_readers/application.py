@@ -5,7 +5,7 @@ class ApplicationReader(BaseReader):
     request_id: str
     client_type: str
 
-    integration_name = "application"
+    integration_name = "Application"
     is_versioned = False
 
     def load(self) -> None:
